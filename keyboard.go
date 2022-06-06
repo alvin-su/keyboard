@@ -1,3 +1,4 @@
+//从键盘获取用户的输入
 package keyboard
 
 import (
@@ -6,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 )
-
+//将键盘中用户的输入去掉空格并转为float返回
 func GetFloat() (float64, error) {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
